@@ -124,7 +124,7 @@ h1 {
 }
 
 .right_head {
-  width: 100px;
+  width: 150px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -155,12 +155,17 @@ h1 {
 }
 /*         Consultation       */
 .consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   border-radius: 5px;
   height: 40px;
-  width: 40px;
+  width: 90px;
   background: #de2b24;
+  color: white;
   margin-right: 5px;
+  text-align: center;
 }
 /*          Burger Menu        */
 .berger {
