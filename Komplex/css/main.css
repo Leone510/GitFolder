@@ -1,6 +1,5 @@
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  /* line-height: 1.2px; */
   font-size: 14px;
   color: #5c5c5c;
 }
@@ -407,7 +406,8 @@ h1 {
 .approch_step h2 {
   font-size: 28px;
   line-height: 22px;
-  font-family: "helvetica-Normal";
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 700;
 }
 .approch_step p {
   line-height: 12px;
@@ -645,6 +645,9 @@ h1 {
   height: 45px;
   border: 2px solid #515151;
   border-radius: 3px;
+}
+.touch_icon:hover {
+  border: 2px solid #de2b24;
 }
 .touch_icon .icon-facebook-app-symbol {
   color: white;
