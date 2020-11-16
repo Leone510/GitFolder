@@ -42,7 +42,6 @@ body {
   justify-content: space-around;
   align-items: center;
   flex: 0 0 200px;
-  /* padding-left: 10px; */
 }
 .mail {
   display: flex;
@@ -303,6 +302,8 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
+  padding: 0 10px;
 }
 .section_name h2 {
   font-size: 30px;

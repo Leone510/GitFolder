@@ -127,10 +127,16 @@
   /*----------------------------------------------*/
   /*---------------- Slick Slider ----------------*/
   /*----------------------------------------------*/
-
+  .preview {
+    min-height: 400px;
+  }
+  .slider > div {
+    height: 100%;
+    overflow: hidden;
+  }
   .slider_box {
     position: absolute;
-    height: 400px;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
   }
