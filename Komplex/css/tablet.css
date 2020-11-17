@@ -13,12 +13,21 @@
   .left_side {
     padding-right: 20px;
   }
+  .left_side a {
+    margin-left: 5px;
+  }
   .right_side {
-    flex: 0 0 28%;
+    flex: 0 0 28.2%;
     justify-content: flex-start;
   }
+  .mail {
+    margin-left: 10px;
+  }
+  .mail a {
+    margin-left: 6px;
+  }
   .header_facebook {
-    margin-left: 12px;
+    margin: -5px 0 0 20px;
   }
   /*    Logotype     */
   #header {
@@ -38,6 +47,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    margin: 0;
   }
   .logo {
     width: 74px;
@@ -45,7 +55,8 @@
     background: #dd2a24;
     align-self: center;
   }
-  .name {
+  /*-------- Logotype with not picture -----------*/
+  /* .name {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,13 +67,14 @@
   h1 {
     font-weight: 700;
     margin: 0;
-  }
-  /*        Right Side        */
+  } */
+  /*------------- Right Side ------------------*/
   .right_head {
     width: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 0 2px 0;
   }
   /*         Navigation         */
   .nav {
@@ -70,6 +82,7 @@
     width: 400px;
     position: relative;
     display: flex;
+    justify-content: flex-end;
   }
   .menu {
     position: static;
@@ -95,7 +108,7 @@
     display: flex;
     justify-content: flex-start;
     height: auto;
-    margin-left: 20px;
+    margin: 0 10px;
   }
   .menu ul li a {
     text-transform: none;
@@ -112,7 +125,7 @@
     width: 5px;
     position: absolute;
     top: 6px;
-    left: -16px;
+    left: -12px;
   }
   .consultation {
     display: flex;
@@ -153,7 +166,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%, -50%);
+    transform: translate(37%, -40%);
     border-radius: 50%;
     border: 2px solid white;
   }
