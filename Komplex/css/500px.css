@@ -2,8 +2,8 @@
   .right_head {
     width: 200px;
   }
-  .consultation {
-    width: 140px;
+  .list_facebook {
+    padding: 0 10px;
   }
   /*-----------------------------------------*/
   /*        Section 1            */
@@ -18,25 +18,8 @@
     min-height: 400px;
     margin: 0;
   }
-  .preview_content {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transform: translate(0, -30px);
-  }
-  .slider_box {
-    position: absolute;
+  .slider {
     height: 400px;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .slider_box img {
-    height: 400px;
-    object-fit: cover;
   }
   .preview h2 {
     font-size: 250%;

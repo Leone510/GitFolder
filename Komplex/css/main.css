@@ -8,17 +8,24 @@ body {
 /*      Header           */
 /*------------------------------------------*/
 .top_head {
-  height: 25px;
+  height: 30px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   background: #f0f2f4;
 }
+.top_head_container {
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .left_side {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex: 1 1 auto;
-  padding-right: 10px;
+  padding-right: 20px;
   border-right: 1px solid #e2e2e2;
 }
 .left_side span {
@@ -38,10 +45,10 @@ body {
 }
 .right_side {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  flex: 0 0 200px;
+  flex: 0 0 170px;
+  padding-right: 5px;
 }
 .mail {
   display: flex;
@@ -54,6 +61,11 @@ body {
 .right_side a {
   color: #424242;
 }
+.list_facebook {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .header_facebook {
   display: flex;
   justify-content: center;
@@ -62,6 +74,7 @@ body {
   height: 23px;
   background: #1287bf;
   border-radius: 3px;
+  padding: auto 5px auto 0;
 }
 
 .header_facebook a span {
@@ -144,7 +157,7 @@ h1 {
   background: #768fad;
   transition: all 0.3s;
 }
-.menu ul li {
+.menu ul li:not(:last-child) {
   margin: 10px;
 }
 .menu ul li a {
@@ -159,10 +172,10 @@ h1 {
   overflow: hidden;
   border-radius: 5px;
   height: 40px;
-  width: 90px;
+  width: 140px;
   background: #de2b24;
   color: white;
-  margin-right: 5px;
+  margin: 0 10px;
   text-align: center;
 }
 /*          Burger Menu        */
@@ -234,28 +247,7 @@ h1 {
   min-height: 250px;
   z-index: -1;
 }
-.preview_content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.slider > div {
-  height: 100%;
-}
-.slider_box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-.slider img {
-  height: 225px;
-  object-fit: cover;
-}
+
 .section_consultation {
   display: flex;
   align-items: center;
@@ -274,6 +266,39 @@ h1 {
 
 .slider {
   min-width: 0;
+  height: 250px;
+  color: white;
+}
+.slick-list {
+  height: 100%;
+}
+.slick-track {
+  height: 100%;
+}
+.slick-slide {
+  height: 100%;
+}
+.slick_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slick_inner_first {
+  background: url(../img/Spring.jpg) 50% / cover no-repeat;
+}
+.slick_inner_second {
+  background: url(../img/Sand.jpg) 50% / cover no-repeat;
+}
+.slick_inner_third {
+  background: url(../img/legs.png) 50% / cover no-repeat;
+}
+.slick_inner_fourth {
+  background: url(../img/Winter.jpg) 50% / cover no-repeat;
+}
+.slider > div {
+  height: 100%;
 }
 .slick-track {
   display: flex;
