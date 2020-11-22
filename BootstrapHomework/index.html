@@ -16,21 +16,22 @@
         <!--*****************************************************************-->
         <!--************************** Header *******************************-->
         <!--*****************************************************************-->
-        <!-- Logo -->
+
         <header
-          class="col-12 bg-warning p-3 text-center d-flex justify-content-between"
+          class="col-12 bg-warning p-3 text-center d-flex flex-wrap justify-content-between"
         >
-          <div class="logo align-self-center">
-            <img src="img/favicon.png" alt="lable" />
-            <div>
-              <div class="alevel">A-Level</div>
-              <div class="ukr">ukraine</div>
-            </div>
-          </div>
           <!-- Navigation -->
-          <div class="align-self-center">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Navbar</a>
+          <div class="align-self-center w-100 d-flex justify-content-start">
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+              <!-- Logo -->
+              <div class="logo align-self-center flex-grow-1">
+                <img src="img/favicon.png" alt="lable" />
+                <div>
+                  <div class="alevel">A-Level</div>
+                  <div class="ukr">ukraine</div>
+                </div>
+              </div>
+
               <button
                 class="navbar-toggler"
                 type="button"
@@ -44,52 +45,22 @@
               </button>
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#"
-                      >Home <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item d-flex flex-wrap ml-5">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <ul
+                  class="navbar-nav mr-auto mr-lg-0 ml-lg-auto justify-content-end"
+                >
+                  <li class="nav-item text-left">
+                    <a class="nav-link active" href="#">Item1</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link text-left" href="#">Item2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">Item3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-left" href="#">Item4</a>
                   </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input
-                    class="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button
-                    class="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                  >
-                    Search
-                  </button>
-                </form>
               </div>
             </nav>
           </div>
@@ -101,132 +72,311 @@
         <main class="container-fluid">
           <div class="row d-flex">
             <aside
-              class="col-12 col-md-6 col-lg-2 aside_blok bg-danger p-3 py-5 order-0 order-md-1 order-lg-0"
+              class="col-12 col-md-6 col-lg-2 aside_blok bg-danger p-3 py-5 order-0 order-md-1 order-lg-0 font-weight-bold"
             >
               aside
             </aside>
-            <div class="col-12 col-lg-8 p-3 py-5 order-1 order-md-0 order-lg-1">
+            <div class="col-12 col-lg-8 p-3 order-1 order-md-0 order-lg-1">
               <!--*****************************************************************-->
               <!--*********************** Cards Table *****************************-->
               <!--*****************************************************************-->
-              <div class="row m-0 p-0">
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
-                  </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus aspernatur velit ipsum distinctio, eum optio.
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
-                  </div>
-                </div>
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
-                  </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Delectus, placeat! Earum dolore inventore odio
+                        eum?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
-                  </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Quia, exercitationem fugit.
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
-                  </div>
-                </div>
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
-                  </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus aspernatur velit ipsum distinctio, eum optio.
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
-                  </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vitae, necessitatibus porro?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
                   </div>
                 </div>
-                <div class="col-11 col-sm-5 col-xl-4 card mx-auto my-3">
-                  <div class="px-5 py-1">
-                    <img
-                      src="img/Nature.jpg"
-                      class="card-img-top rounded"
-                      alt="Must be, try letter"
-                    />
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, architecto maxime eligendi explicabo eum
+                        inventore?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
                   </div>
-                  <div
-                    class="card-body d-flex flex-column justify-content-between"
-                  >
-                    <h5 class="card-title text-center">Lorem, ipsum dolor.</h5>
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptate, ipsa exercitationem?
-                    </p>
-                    <a href="#" class="btn btn-primary w-100">Go</a>
+                </div>
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <div class="img_box px-5 py-3">
+                      <img
+                        src="img/Nature.jpg"
+                        class="card-img-top rounded"
+                        alt="Must be, try letter"
+                      />
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, harum minima!
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- <div class="row m-n1">
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatibus aspernatur velit ipsum distinctio,
+                        eum optio.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Quia, exercitationem fugit.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatibus aspernatur velit ipsum distinctio,
+                        eum optio.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-11 col-sm-5 col-xl-4">
+                  <div class="card mx-2 my-3 p-0">
+                    <div class="pt-4">
+                      <div class="img_box px-5">
+                        <img
+                          src="img/Nature.jpg"
+                          class="card-img-top rounded"
+                          alt="Must be, try letter"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="card-body d-flex flex-column justify-content-center"
+                    >
+                      <h5 class="card-title text-center">
+                        Lorem, ipsum dolor.
+                      </h5>
+                      <p class="card-text text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate, ipsa exercitationem?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary w-100">Go</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
               <!--*****************************************************************-->
             </div>
             <aside
-              class="col-md-6 col-lg-2 aside_blok bg-info p-3 py-5 order-2"
+              class="col-md-6 col-lg-2 aside_blok bg-info p-3 py-5 order-2 font-weight-bold"
             >
               aside
             </aside>

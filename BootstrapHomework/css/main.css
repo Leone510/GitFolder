@@ -1,0 +1,42 @@
+/*--------------------------------*/
+/*            Logotype            */
+/*--------------------------------*/
+.logo {
+  height: 60px;
+  width: 170px;
+  margin: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 50px;
+}
+.logo > div {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  transform: translate(5px, 5px);
+}
+.alevel {
+  font-size: 200%;
+  width: 150px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -3px;
+}
+.alevel:first-letter {
+  color: #e75b1f;
+  font-family: monospace;
+  font-size: 150%;
+}
+.ukr {
+  font-size: xx-small;
+  color: #e75b1f;
+  transform: translate(-4px, -10px);
+}
+
+/*---------------------------------------*/
+
+.li:hover {
+  font-weight: 700;
+}
