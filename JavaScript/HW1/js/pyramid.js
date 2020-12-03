@@ -1,4 +1,4 @@
-const medianNumber = 10;
+const medianNumber = 7;
 const medianLength = medianNumber*2-1;
 
 let pyramidBlocks = 1;
