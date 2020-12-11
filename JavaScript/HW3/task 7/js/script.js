@@ -1,11 +1,21 @@
-function Emploee (obj) {
-   this.id = obj.id;
-   this.name = obj.name;
-   this.surname = obj.surname;
-   this.salary = obj.salary;
-   this.workExperience = obj.workExperience;
-   this.isPrivileges = obj.isPrivileges;
-   this.gender = obj.gender;
+function Emploee (id, name, surname, salary, experience, privileges, gender) {
+   this.id = id;
+   this.name = name;
+   this.surname = surname;
+   this.salary = salary;
+   this.workExperience = experience;
+   this.isPrivileges = privileges;
+   this.gender = gender;
+
+   Object.defineProperty(this, 'fullInfo', {
+      get function(){
+         let lineInfo = [];
+         for (let key in this){
+            lineInfo.push(key + ' - ' [key])
+         }
+         return 123;
+      }
+   })
 }
 
 Emploee.prototype.getFullName = function () {
@@ -17,7 +27,7 @@ let employeeObj = new Emploee (0, 'Valeriy', 'Zhmishenko', 1000, 10, true, 'male
 let createEmployesFromArr = (arr) => {
    let newArr = [];
    for (let args of arr) {
-      employeeObj = new Emploee (args)
+      employeeObj = new Emploee (args.id, args.name, args.surname, args.salary, args.workExperience, args.isPrivileges, args.gender)
       newArr.push(employeeObj);
    }
    return newArr;
@@ -47,7 +57,11 @@ const getRandomEmployee = (arr) => {
    let rand = 1 + Math.random()*arr.length;
    return arr[(Math.floor(rand))-1];
 }
-console.log(getRandomEmployee(emplyeeConstructArr));
+// console.log(getRandomEmployee(emplyeeConstructArr));
+
+
+
+
 
 
 
