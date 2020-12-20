@@ -1,17 +1,15 @@
-const sum = (num) => {
+const sum = () => {
    let result = 0;
    let oldNum = 0;
-   console.log(result);
-   console.log(oldNum);
-   return () => {
+ 
+   return (num) => {
       oldNum = result;
       result = oldNum + num;
-      console.log(oldNum);
-      console.log(result);
+      return result;
    };
 }
 
-let foo = sum(2)
+let counter = sum()
 
 
 
