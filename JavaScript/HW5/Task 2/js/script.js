@@ -1,7 +1,13 @@
-const getUpdatedArr = (a) => {
+const foo = () => {
    let arr = [];
-   return () => {
+   return (a) => {
+      if (a === undefined) {
+         arr = [];
+         return arr;
+      }
       arr.push(a);
-      console.log(arr);
+      return arr;
    };
 }
+
+let getUpdatedArr = foo()
