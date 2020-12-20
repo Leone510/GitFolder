@@ -12,7 +12,14 @@ Emploee.prototype.getFullName = function () {
    return this.surname + ' ' + this.name;
 }
 
-let employeeObj = new Emploee (0, 'Valeriy', 'Zhmishenko', 1000, 10, true, 'male');
+let employeeObj = new Emploee ({
+   id: 0,
+   name: 'Valeriy',
+   surname: 'Zhmishenko',
+   salary: 1000,
+   workExperience: 10,
+   isPrivileges: true,
+   gender: 'male'});
 
 let createEmployesFromArr = (arr) => {
    let newArr = [];
