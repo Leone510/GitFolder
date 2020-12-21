@@ -13,8 +13,8 @@ function Emploee (obj) {
       },
       set: function(newObj) {
          for (let key in newObj){
-            if (key in this) {
-               this.key = newObj.key;
+            if ([key] in this) {
+               this[key] = newObj[key];
             } else {continue;}
          }
       } 
