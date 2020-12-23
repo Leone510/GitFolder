@@ -49,6 +49,31 @@ const arr = [
 
 //------------------------ Task 6.5 ------------------------------
 
+class Condidate {
+   constructor(candidate) {
+      Object.assign(this, candidate)
+      console.log(this)
+   }
+
+   // state = () => this.address.split(', ')[2];
+   // state = function() {
+   //    return this.address.split(', ')[2];
+   // }()
+}
+
+//------------------------ Task 6.6 ------------------------------
+
+function getCompanyNames() {
+   let companys = [];
+   condidateArr.forEach(element => {
+      if(!companys.some(item => item === element.company)) {
+         companys.push(element.company)
+      }
+   });
+   return companys;
+}
+
+
 
 
 
