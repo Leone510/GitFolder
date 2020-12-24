@@ -88,7 +88,9 @@ function getCondidatesByUnreadMsg(num) {
 
 //------------------------ Task 6.9 ------------------------------
 
-
+function getCondidatesByGender(gen) {
+   return condidateArr.filter(item => item.gender === gen);
+}
 
 
 
