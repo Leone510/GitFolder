@@ -55,10 +55,7 @@ class Condidate {
       console.log(this)
    }
 
-   // state = () => this.address.split(', ')[2];
-   // state = function() {
-   //    return this.address.split(', ')[2];
-   // }()
+   state = () => this.address.split(', ')[2];
 }
 
 //------------------------ Task 6.6 ------------------------------
