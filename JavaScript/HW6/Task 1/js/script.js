@@ -73,6 +73,12 @@ function getCompanyNames() {
    return companys;
 }
 
+//------------------------ Task 6.7 ------------------------------
+
+function getUsersByYear(year) {
+   let filteredByYear = condidateArr.filter(item => item.registered.split('-')[0] == year);
+   return filteredByYear.map(item => item._id);
+}
 
 
 
