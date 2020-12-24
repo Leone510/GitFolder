@@ -80,6 +80,15 @@ function getUsersByYear(year) {
    return filteredByYear.map(item => item._id);
 }
 
+//------------------------ Task 6.8 ------------------------------
+
+function getCondidatesByUnreadMsg(num) {
+   return condidateArr.filter(item => item.greeting.match(/\d+/) == num);
+}
+
+//------------------------ Task 6.9 ------------------------------
+
+
 
 
 
