@@ -28,12 +28,26 @@ const sortCandidatesArr = sortBy => {
    } else if(sortBy === 'desc') {
       return condidateArr.sort((a, b) => balanceToNumber(b.balance) - balanceToNumber(a.balance));
    } else if (sortBy === undefined) {
-      return condidateArr;
+      return condidateArr.sort((a, b) => a.index - b.index);
    } else {
       return 'Wrong Sort Identificator'
    }
 }
 
+//----------------------------- Task 4 ---------------------------------
+
+const getEyeColorMap = () => {
+   let getColors = {};
+   condidateArr.forEach(condidate => {
+      if (!Object.keys(getColors).some(color => color === condidate.eyeColor)) {
+         getColors[condidate.eyeColor] = [condidate]
+      } else {
+         getColors[condidate.eyeColor].push(condidate);
+      }
+   });
+
+   return getColors;
+}
 
 
 
