@@ -89,6 +89,55 @@ function getCondidatesByGender(gen) {
    return condidateArr.filter(item => item.gender === gen);
 }
 
+//------------------------ Task 6.10 Reduce ------------------------
 
+let customReduce = function (collback, accValue) {
+   let index = 0;
+   if (accValue === undefined) {
+      accValue = this[0];
+      index++;
+   }
+   
+   for ( ; index!=this.length; index++) {
+      accValue = collback(accValue, this[index], index, this)
+   }
+   return accValue;
+}
+
+Object.defineProperty(Array.prototype, 'customReduce', {
+   value: customReduce,
+   enumerable: false,
+})
+
+let arrSixTen = [1, 2, 3, 4, 5];
+
+// console.log(arrSixTen.reduce((sum, elem) => sum + elem, 0));
+// console.log(arrSixTen.customReduce((sum, elem) => sum + elem, 0))
+
+//------------------------ Task 6.10 Join --------------------------
+
+let customJoin = function (sumbol) {
+   let resultString = '';
+   let separator = ',';
+   if (sumbol != undefined) {
+      separator = sumbol.toString()
+   }
+
+   for (let i=0; i<this.length; i++) {
+      if (i === this.length - 1) {
+         return resultString += this[i].toString();
+      }
+      resultString += this[i].toString() + separator;
+   }
+}
+
+Object.defineProperty(Array.prototype, 'customJoin', {
+   value: customJoin,
+   enumerable: false,
+})
+
+
+console.log(arrSixTen.join('-'));
+console.log(arrSixTen.customJoin('-'));
 
 
