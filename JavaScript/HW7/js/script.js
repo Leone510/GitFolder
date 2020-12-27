@@ -17,7 +17,22 @@ const getCandidateById = id => {
 
 //----------------------------- Task 3 ---------------------------------
 
+function balanceToNumber(balance) {
+   return Number(balance.replace(/[^0-9\.-]+/g,""))
+   // return balance.split('').filter(sumbol => sumbol === /\[0-9]/)
+}
 
+const sortCandidatesArr = sortBy => {
+   if (sortBy === 'asc') {
+      return condidateArr.sort((a, b) => balanceToNumber(a.balance) - balanceToNumber(b.balance));
+   } else if(sortBy === 'desc') {
+      return condidateArr.sort((a, b) => balanceToNumber(b.balance) - balanceToNumber(a.balance));
+   } else if (sortBy === undefined) {
+      return condidateArr;
+   } else {
+      return 'Wrong Sort Identificator'
+   }
+}
 
 
 
