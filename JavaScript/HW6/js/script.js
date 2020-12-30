@@ -137,7 +137,7 @@ Object.defineProperty(Array.prototype, 'customJoin', {
 })
 
 
-console.log(arrSixTen.join('-'));
-console.log(arrSixTen.customJoin('-'));
+// console.log(arrSixTen.join(6));
+// console.log(arrSixTen.customJoin(6));
 
 

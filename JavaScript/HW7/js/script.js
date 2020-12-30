@@ -1,8 +1,8 @@
 
 //----------------------------- Task 1 ---------------------------------
 
-const searchCandidatesByPhoneNumber = phone => {
-   return condidateArr.filter(condidate => condidate.phone.includes(phone))
+const searchCandidatesByPhoneNumber = num => {
+   return condidateArr.filter(condidate => condidate.phone.match(/[0-9]/g).join('').includes(num))
 }
 
 //----------------------------- Task 2 ---------------------------------
