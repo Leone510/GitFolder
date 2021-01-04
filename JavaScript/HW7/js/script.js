@@ -2,7 +2,8 @@
 //----------------------------- Task 1 ---------------------------------
 
 const searchCandidatesByPhoneNumber = num => {
-   return condidateArr.filter(condidate => condidate.phone.match(/[0-9]/g).join('').includes(num))
+   let newNum = num.match(/[0-9]/g).join('');
+   return condidateArr.filter(condidate => condidate.phone.match(/[0-9]/g).join('').includes(newNum))
 }
 
 //----------------------------- Task 2 ---------------------------------
